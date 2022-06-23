@@ -754,13 +754,24 @@ tr:hover {
 }
 
 .jsgraph {
-    width: 55%;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: whitesmoke;
+    padding: 10px 0px;
+}
+
+@media screen and (min-width:1233px){
+
+.jsgraph {
+    width: 60%;
     margin: auto;
     background-color: whitesmoke;
     padding: 10px 0px;
 }
 
 
+}
 #graphplotting {
     display: none;
 }
