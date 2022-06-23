@@ -107,7 +107,7 @@ function week() {
             document.getElementById("currency5").innerHTML = ""
             array = Object.keys(data1.rates);
             for (let i = 0; i < array.length; i++) {
-                array2.push(array[i]);
+                array2.push(array[i].slice(0,10));
             }
             array = Object.values(data1.rates)
             for (let [key, value] of Object.entries(array)) {
@@ -209,7 +209,7 @@ function month() {
             document.getElementById("currency5").innerHTML = ""
             array = Object.keys(data1.rates);
             for (let i = 0; i < array.length; i++) {
-                array2.push(array[i]);
+                array2.push(array[i].slice(0,10));
             }
             array = Object.values(data1.rates)
             for (let [key, value] of Object.entries(array)) {
@@ -304,7 +304,7 @@ function year() {
             document.getElementById("currency5").innerHTML = ""
             array = Object.keys(data1.rates);
             for (let i = 0; i < array.length; i++) {
-                array2.push(array[i]);
+                array2.push(array[i].slice(0,10));
             }
             array = Object.values(data1.rates)
             for (let [key, value] of Object.entries(array)) {
@@ -399,7 +399,7 @@ function year5() {
             document.getElementById("currency5").innerHTML = ""
             array = Object.keys(data1.rates);
             for (let i = 0; i < array.length; i++) {
-                array2.push(array[i]);
+                array2.push(array[i].slice(0,10));
             }
             array = Object.values(data1.rates)
             for (let [key, value] of Object.entries(array)) {
